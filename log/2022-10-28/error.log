@@ -1,0 +1,3 @@
+[eva日记]2022/10/28 - 16:58:01.201	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	accept tcp [::]:9999: use of closed network connection
+[eva日记]2022/10/28 - 19:10:53.924	[31merror[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:39	register table failed	{"error": "unsupported data type: &[]"}
+[eva日记]2022/10/28 - 19:16:31.606	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	net.Listen error: listen tcp :9999: bind: address already in use
