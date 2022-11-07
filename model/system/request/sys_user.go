@@ -7,10 +7,12 @@ type Register struct {
 	Username     string `json:"userName"`
 	Password     string `json:"passWord"`
 	NickName     string `json:"nickName" gorm:"default:'QMPlusUser'"`
-	HeaderImg    string `json:"headerImg" gorm:"default:'https://qmplusimg.henrongyi.top/gva_header.jpg'"`
+	HeaderImg    string `json:"headerImg" gorm:"default:'http://localhost:9999/uploads/file/img.png'"`
 	AuthorityId  uint   `json:"authorityId" gorm:"default:888"`
 	Enable       int    `json:"enable"`
-	AuthorityIds []uint `json:"authorityIds"`
+	AuthorityIds []uint `json:"authorityIds" swaggertype:"string" example:"[]uint 角色id"`
+	Phone        string `json:"phone" example:"电话号码"`
+	Email        string `json:"email" example:"电子邮箱"`
 }
 
 // User login structure

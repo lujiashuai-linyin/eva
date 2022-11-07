@@ -1,4 +1,0 @@
-[eva日记]2022/10/31 - 14:23:39.202	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:46	register table success
-[eva日记]2022/10/31 - 14:23:39.203	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:32	use middleware cors
-[eva日记]2022/10/31 - 14:23:39.205	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:76	router register success
-[eva日记]2022/10/31 - 14:23:39.206	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}

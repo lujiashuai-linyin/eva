@@ -126,8 +126,7 @@ func Verify(st interface{}, roleMap Rules) (err error) {
 
 	typ := reflect.TypeOf(st)
 	val := reflect.ValueOf(st) // 获取reflect.Type类型
-
-	kd := val.Kind() // 获取到st对应的类别
+	kd := val.Kind()           // 获取到st对应的类别
 	if kd != reflect.Struct {
 		return errors.New("expect struct")
 	}

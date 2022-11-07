@@ -7,7 +7,7 @@ import (
 
 	"eva/global"
 	"eva/model/common/request"
-	"eva/model/example"
+	"eva/model/file_upload"
 	"eva/utils/upload"
 )
 
@@ -17,7 +17,7 @@ import (
 //@param: file model.ExaFileUploadAndDownload
 //@return: error
 
-func (e *FileUploadAndDownloadService) Upload(file example.ExaFileUploadAndDownload) error {
+func (e *FileUploadAndDownloadService) Upload(file file_upload.ExaFileUploadAndDownload) error {
 	return global.EVA_DB.Create(&file).Error
 }
 
@@ -27,8 +27,8 @@ func (e *FileUploadAndDownloadService) Upload(file example.ExaFileUploadAndDownl
 //@param: id uint
 //@return: model.ExaFileUploadAndDownload, error
 
-func (e *FileUploadAndDownloadService) FindFile(id uint) (example.ExaFileUploadAndDownload, error) {
-	var file example.ExaFileUploadAndDownload
+func (e *FileUploadAndDownloadService) FindFile(id uint) (file_upload.ExaFileUploadAndDownload, error) {
+	var file file_upload.ExaFileUploadAndDownload
 	err := global.EVA_DB.Where("id = ?", id).First(&file).Error
 	return file, err
 }
@@ -39,8 +39,8 @@ func (e *FileUploadAndDownloadService) FindFile(id uint) (example.ExaFileUploadA
 //@param: file model.ExaFileUploadAndDownload
 //@return: err error
 
-func (e *FileUploadAndDownloadService) DeleteFile(file example.ExaFileUploadAndDownload) (err error) {
-	var fileFromDb example.ExaFileUploadAndDownload
+func (e *FileUploadAndDownloadService) DeleteFile(file file_upload.ExaFileUploadAndDownload) (err error) {
+	var fileFromDb file_upload.ExaFileUploadAndDownload
 	fileFromDb, err = e.FindFile(file.ID)
 	if err != nil {
 		return
@@ -54,8 +54,8 @@ func (e *FileUploadAndDownloadService) DeleteFile(file example.ExaFileUploadAndD
 }
 
 // EditFileName 编辑文件名或者备注
-func (e *FileUploadAndDownloadService) EditFileName(file example.ExaFileUploadAndDownload) (err error) {
-	var fileFromDb example.ExaFileUploadAndDownload
+func (e *FileUploadAndDownloadService) EditFileName(file file_upload.ExaFileUploadAndDownload) (err error) {
+	var fileFromDb file_upload.ExaFileUploadAndDownload
 	return global.EVA_DB.Where("id = ?", file.ID).First(&fileFromDb).Update("name", file.Name).Error
 }
 
@@ -69,8 +69,8 @@ func (e *FileUploadAndDownloadService) GetFileRecordInfoList(info request.PageIn
 	limit := info.PageSize
 	offset := info.PageSize * (info.Page - 1)
 	keyword := info.Keyword
-	db := global.EVA_DB.Model(&example.ExaFileUploadAndDownload{})
-	var fileLists []example.ExaFileUploadAndDownload
+	db := global.EVA_DB.Model(&file_upload.ExaFileUploadAndDownload{})
+	var fileLists []file_upload.ExaFileUploadAndDownload
 	if len(keyword) > 0 {
 		db = db.Where("name LIKE ?", "%"+keyword+"%")
 	}
@@ -88,7 +88,7 @@ func (e *FileUploadAndDownloadService) GetFileRecordInfoList(info request.PageIn
 //@param: header *multipart.FileHeader, noSave string
 //@return: file model.ExaFileUploadAndDownload, err error
 
-func (e *FileUploadAndDownloadService) UploadFile(header *multipart.FileHeader, noSave string) (file example.ExaFileUploadAndDownload, err error) {
+func (e *FileUploadAndDownloadService) UploadFile(header *multipart.FileHeader, noSave string) (file file_upload.ExaFileUploadAndDownload, err error) {
 	oss := upload.NewOss()
 	filePath, key, uploadErr := oss.UploadFile(header)
 	if uploadErr != nil {
@@ -96,7 +96,7 @@ func (e *FileUploadAndDownloadService) UploadFile(header *multipart.FileHeader, 
 	}
 	if noSave == "0" {
 		s := strings.Split(header.Filename, ".")
-		f := example.ExaFileUploadAndDownload{
+		f := file_upload.ExaFileUploadAndDownload{
 			Url:  filePath,
 			Name: header.Filename,
 			Tag:  s[len(s)-1],

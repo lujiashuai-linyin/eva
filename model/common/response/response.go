@@ -13,13 +13,29 @@ type Response struct {
 }
 
 const (
-	ERROR   = 7
+	ERROR   = 1
 	SUCCESS = 0
 )
 
 func Result(code int, data interface{}, msg string, c *gin.Context) {
 	// 开始时间
 	c.JSON(http.StatusOK, Response{
+		code,
+		data,
+		msg,
+	})
+}
+func CResult(code int, data interface{}, msg string, c *gin.Context) {
+	// 开始时间
+	c.JSON(http.StatusBadRequest, Response{
+		code,
+		data,
+		msg,
+	})
+}
+func SResult(code int, data interface{}, msg string, c *gin.Context) {
+	// 开始时间
+	c.JSON(http.StatusInternalServerError, Response{
 		code,
 		data,
 		msg,
@@ -43,13 +59,25 @@ func OkWithDetailed(data interface{}, message string, c *gin.Context) {
 }
 
 func Fail(c *gin.Context) {
-	Result(ERROR, map[string]interface{}{}, "操作失败", c)
+	CResult(ERROR, map[string]interface{}{}, "操作失败", c)
 }
 
 func FailWithMessage(message string, c *gin.Context) {
-	Result(ERROR, map[string]interface{}{}, message, c)
+	CResult(ERROR, map[string]interface{}{}, message, c)
 }
 
 func FailWithDetailed(data interface{}, message string, c *gin.Context) {
-	Result(ERROR, data, message, c)
+	CResult(ERROR, data, message, c)
+}
+
+func SFail(c *gin.Context) {
+	CResult(ERROR, map[string]interface{}{}, "操作失败", c)
+}
+
+func SFailWithMessage(message string, c *gin.Context) {
+	CResult(ERROR, map[string]interface{}{}, message, c)
+}
+
+func SFailWithDetailed(data interface{}, message string, c *gin.Context) {
+	CResult(ERROR, data, message, c)
 }

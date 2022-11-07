@@ -2,7 +2,7 @@ package book
 
 import "eva/global"
 
-type Chapter struct {
+type BookChapter struct {
 	global.EVA_MODEL
 	BookId       int    `json:"book_id" form:"book_id" gorm:"index;column:book_id;comment:book_id"`
 	ChapterName  string `json:"chapter_name" form:"chapter_name" gorm:"column:chapter_name;comment:chapter_name"`

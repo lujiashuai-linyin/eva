@@ -1,0 +1,55 @@
+[eva日记]2022/11/06 - 00:15:04.144	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	net.Listen error: listen tcp :9999: bind: address already in use
+[eva日记]2022/11/06 - 00:15:21.250	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	accept tcp [::]:9999: use of closed network connection
+[eva日记]2022/11/06 - 00:17:45.735	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:58	验证码获取失败!
+[eva日记]2022/11/06 - 00:17:45.737	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:63	无当前用户!	{"error": "用户不存在"}
+[eva日记]2022/11/06 - 00:19:54.989	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	accept tcp [::]:9999: use of closed network connection
+[eva日记]2022/11/06 - 00:20:04.866	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:59	验证码获取失败!
+[eva日记]2022/11/06 - 00:20:04.870	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:64	无当前用户!	{"error": "用户不存在"}
+[eva日记]2022/11/06 - 00:21:04.781	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:59	验证码获取失败!
+[eva日记]2022/11/06 - 00:21:04.786	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:64	无当前用户!	{"error": "用户不存在"}
+[eva日记]2022/11/06 - 00:24:41.738	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:59	验证码获取失败!
+[eva日记]2022/11/06 - 00:24:41.741	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:64	无当前用户!	{"error": "用户不存在"}
+[eva日记]2022/11/06 - 00:25:48.073	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	accept tcp [::]:9999: use of closed network connection
+[eva日记]2022/11/06 - 00:26:08.239	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:59	验证码获取失败!
+[eva日记]2022/11/06 - 00:27:06.724	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:59	验证码获取失败!
+[eva日记]2022/11/06 - 00:31:45.660	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/06 - 00:31:45.665	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	accept tcp [::]:9999: use of closed network connection
+[eva日记]2022/11/06 - 00:37:37.776	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/06 - 00:37:37.780	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	accept tcp [::]:9999: use of closed network connection
+[eva日记]2022/11/06 - 10:48:57.675	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/06 - 11:01:39.094	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/06 - 11:01:39.097	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	accept tcp [::]:9999: use of closed network connection
+[eva日记]2022/11/06 - 11:26:43.572	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/06 - 11:26:43.575	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	net.Listen error: listen tcp :9999: bind: address already in use
+[eva日记]2022/11/06 - 11:26:53.653	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/06 - 11:26:53.654	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	accept tcp [::]:9999: use of closed network connection
+[eva日记]2022/11/06 - 11:32:58.642	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/06 - 11:50:24.235	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:70	验证码获取初始化错误!	{"error": "Get \"http://api.geetest.com/register.php?client_type=unknown&digestmod=md5&gt=4884f212bac718ccf442611b59a9f344&ip_address=&json_format=1&sdk=golang-gin%3A3.1.0&user_id=1\": dial tcp: lookup api.geetest.com on [::1]:53: read udp [::1]:52693->[::1]:53: read: connection refused"}
+[eva日记]2022/11/06 - 11:53:11.253	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:70	验证码获取初始化错误!	{"error": "Get \"http://api.geetest.com/register.php?client_type=unknown&digestmod=md5&gt=4884f212bac718ccf442611b59a9f344&ip_address=&json_format=1&sdk=golang-gin%3A3.1.0&user_id=1\": dial tcp: lookup api.geetest.com on [::1]:53: read udp [::1]:53839->[::1]:53: read: connection refused"}
+[eva日记]2022/11/06 - 11:53:35.376	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:70	验证码获取初始化错误!	{"error": "Get \"http://api.geetest.com/register.php?client_type=unknown&digestmod=md5&gt=4884f212bac718ccf442611b59a9f344&ip_address=&json_format=1&sdk=golang-gin%3A3.1.0&user_id=1\": dial tcp: lookup api.geetest.com on [::1]:53: read udp [::1]:58980->[::1]:53: read: connection refused"}
+[eva日记]2022/11/06 - 13:35:00.844	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:70	验证码获取初始化错误!	{"error": "Get \"http://api.geetest.com/register.php?client_type=unknown&digestmod=md5&gt=4884f212bac718ccf442611b59a9f344&ip_address=&json_format=1&sdk=golang-gin%3A3.1.0&user_id=1\": dial tcp: lookup api.geetest.com on [::1]:53: read udp [::1]:64859->[::1]:53: read: connection refused"}
+[eva日记]2022/11/06 - 13:45:04.835	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:70	验证码获取初始化错误!	{"error": "Get \"http://api.geetest.com/register.php?client_type=unknown&digestmod=md5&gt=4884f212bac718ccf442611b59a9f344&ip_address=&json_format=1&sdk=golang-gin%3A3.1.0&user_id=1\": dial tcp: lookup api.geetest.com on [::1]:53: read udp [::1]:62069->[::1]:53: read: connection refused"}
+[eva日记]2022/11/06 - 13:47:38.716	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:70	验证码获取初始化错误!	{"error": "Get \"http://api.geetest.com/register.php?client_type=unknown&digestmod=md5&gt=4884f212bac718ccf442611b59a9f344&ip_address=&json_format=1&sdk=golang-gin%3A3.1.0&user_id=1\": dial tcp: lookup api.geetest.com on [::1]:53: read udp [::1]:56212->[::1]:53: read: connection refused"}
+[eva日记]2022/11/06 - 13:48:32.814	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/06 - 13:48:40.057	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:70	验证码获取初始化错误!	{"error": "Get \"http://api.geetest.com/register.php?client_type=web&digestmod=md5&gt=4884f212bac718ccf442611b59a9f344&ip_address=&json_format=1&sdk=golang-gin%3A3.1.0&user_id=1\": dial tcp: lookup api.geetest.com on [::1]:53: read udp [::1]:59757->[::1]:53: read: connection refused"}
+[eva日记]2022/11/06 - 13:48:52.517	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:70	验证码获取初始化错误!	{"error": "Get \"http://api.geetest.com/register.php?client_type=web&digestmod=md5&gt=4884f212bac718ccf442611b59a9f344&ip_address=&json_format=1&sdk=golang-gin%3A3.1.0&user_id=1\": dial tcp: lookup api.geetest.com on [::1]:53: read udp [::1]:63960->[::1]:53: read: connection refused"}
+[eva日记]2022/11/06 - 15:07:20.011	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/06 - 15:07:20.012	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	accept tcp [::]:9999: use of closed network connection
+[eva日记]2022/11/06 - 15:10:33.331	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/06 - 15:10:33.332	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	accept tcp [::]:9999: use of closed network connection
+[eva日记]2022/11/06 - 15:11:39.105	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/06 - 15:11:39.106	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	accept tcp [::]:9999: use of closed network connection
+[eva日记]2022/11/06 - 15:16:29.658	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/06 - 15:16:29.660	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	accept tcp [::]:9999: use of closed network connection
+[eva日记]2022/11/06 - 15:19:09.139	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/06 - 15:19:09.141	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	accept tcp [::]:9999: use of closed network connection
+[eva日记]2022/11/06 - 15:22:25.935	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/06 - 15:22:25.936	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	accept tcp [::]:9999: use of closed network connection
+[eva日记]2022/11/06 - 15:27:28.836	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/06 - 15:27:28.837	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	accept tcp [::]:9999: use of closed network connection
+[eva日记]2022/11/06 - 17:10:53.528	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:57	请求参数错误!
+[eva日记]2022/11/06 - 17:11:19.857	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:57	请求参数错误!
+[eva日记]2022/11/06 - 18:52:47.932	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/06 - 18:52:47.935	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	accept tcp [::]:9999: use of closed network connection
+[eva日记]2022/11/06 - 19:07:10.708	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/06 - 19:07:10.710	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	accept tcp [::]:9999: use of closed network connection

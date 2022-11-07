@@ -1,0 +1,96 @@
+[eva日记]2022/11/05 - 17:07:56.414	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 17:07:56.416	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 17:07:56.417	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 17:07:56.417	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 17:08:28.434	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 17:08:28.436	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 17:08:28.437	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 17:08:28.438	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 17:11:35.470	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 17:11:35.471	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 17:11:35.472	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 17:11:35.472	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 17:13:29.257	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 17:13:29.259	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 17:13:29.259	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 17:13:29.259	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 17:14:20.119	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 17:14:20.119	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 17:14:20.120	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 17:14:20.120	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 17:16:19.830	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 17:16:19.831	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 17:16:19.832	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 17:16:19.832	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 17:20:30.296	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 17:20:30.297	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 17:20:30.297	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 17:20:30.297	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 17:53:00.354	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 17:53:00.355	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 17:53:00.356	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 17:53:00.356	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 17:53:14.405	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 17:53:14.407	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 17:53:14.408	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 17:53:14.408	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 17:53:26.747	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 17:53:26.749	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 17:53:26.750	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 17:53:26.750	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 17:53:54.025	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 17:53:54.027	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 17:53:54.028	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 17:53:54.028	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 18:30:20.198	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 18:30:20.199	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 18:30:20.200	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 18:30:20.200	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 18:34:13.276	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 18:34:13.277	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 18:34:13.278	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 18:34:13.279	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 18:54:49.897	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 18:54:49.897	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 18:54:49.898	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 18:54:49.898	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 19:06:48.508	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 19:06:48.508	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 19:06:48.509	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 19:06:48.509	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 19:10:51.680	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 19:10:51.681	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 19:10:51.682	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 19:10:51.682	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 19:12:56.771	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 19:12:56.773	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 19:12:56.773	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 19:12:56.773	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 19:32:56.388	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 19:32:56.389	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 19:32:56.390	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 19:32:56.390	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 19:56:22.366	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 19:56:22.367	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 19:56:22.368	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 19:56:22.368	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 19:56:38.083	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 19:56:38.083	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 19:56:38.084	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 19:56:38.084	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 20:03:16.726	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 20:03:16.726	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 20:03:16.727	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 20:03:16.727	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 20:05:09.881	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 20:05:09.883	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 20:05:09.883	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 20:05:09.883	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 20:36:45.613	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 20:36:45.613	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 20:36:45.614	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 20:36:45.614	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/05 - 20:43:33.891	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/05 - 20:43:33.892	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/05 - 20:43:33.892	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/05 - 20:43:33.892	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}

@@ -6,11 +6,11 @@ import (
 	"mime/multipart"
 	"strconv"
 
-	"eva/model/example"
+	"eva/model/file_upload"
 
 	"eva/global"
 	"eva/model/common/response"
-	exampleRes "eva/model/example/response"
+	exampleRes "eva/model/file_upload/response"
 	"eva/utils"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
@@ -22,7 +22,7 @@ import (
 // @Security  ApiKeyAuth
 // @accept    multipart/form-data
 // @Produce   application/json
-// @Param     file  formData  file                           true  "an example for breakpoint resume, 断点续传示例"
+// @Param     file  formData  file                           true  "an file_upload for breakpoint resume, 断点续传示例"
 // @Success   200   {object}  response.Response{msg=string}  "断点续传到服务器"
 // @Router    /fileUploadAndDownload/breakpointContinue [post]
 func (b *FileUploadAndDownloadApi) BreakpointContinue(c *gin.Context) {
@@ -129,7 +129,7 @@ func (b *FileUploadAndDownloadApi) BreakpointContinueFinish(c *gin.Context) {
 // @Success   200   {object}  response.Response{msg=string}  "删除切片"
 // @Router    /fileUploadAndDownload/removeChunk [post]
 func (b *FileUploadAndDownloadApi) RemoveChunk(c *gin.Context) {
-	var file example.ExaFile
+	var file file_upload.ExaFile
 	err := c.ShouldBindJSON(&file)
 	if err != nil {
 		response.FailWithMessage(err.Error(), c)

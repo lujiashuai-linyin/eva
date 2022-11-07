@@ -8,11 +8,14 @@ import (
 
 	"eva/global"
 	"eva/model/common/response"
+	"eva/model/system"
+	"eva/service"
+
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 )
 
-//var jwtService = service.ServiceGroupApp.SystemServiceGroup.JwtService
+var jwtService = service.ServiceGroupApp.SystemServiceGroup.JwtService
 
 func JWTAuth() gin.HandlerFunc {
 	return func(c *gin.Context) {
@@ -23,11 +26,11 @@ func JWTAuth() gin.HandlerFunc {
 			c.Abort()
 			return
 		}
-		//if jwtService.IsBlacklist(token) {
-		//	response.FailWithDetailed(gin.H{"reload": true}, "您的帐户异地登陆或令牌失效", c)
-		//	c.Abort()
-		//	return
-		//}
+		if jwtService.IsBlacklist(token) {
+			response.FailWithDetailed(gin.H{"reload": true}, "您的帐户异地登陆或令牌失效", c)
+			c.Abort()
+			return
+		}
 		j := utils.NewJWT()
 		// parseToken 解析token包含的信息
 		claims, err := j.ParseToken(token)
@@ -51,20 +54,21 @@ func JWTAuth() gin.HandlerFunc {
 		//	c.Abort()
 		//}
 		if claims.ExpiresAt-time.Now().Unix() < claims.BufferTime {
-			claims.ExpiresAt = time.Now().Unix() + global.EVA_CONFIG.JWT.ExpiresTime
+			dr, _ := utils.ParseDuration(global.EVA_CONFIG.JWT.ExpiresTime)
+			claims.ExpiresAt = time.Now().Add(dr).Unix()
 			newToken, _ := j.CreateTokenByOldToken(token, *claims)
 			newClaims, _ := j.ParseToken(newToken)
 			c.Header("new-token", newToken)
 			c.Header("new-expires-at", strconv.FormatInt(newClaims.ExpiresAt, 10))
 			if global.EVA_CONFIG.System.UseMultipoint {
-				//RedisJwtToken, err := jwtService.GetRedisJWT(newClaims.Username)
+				RedisJwtToken, err := jwtService.GetRedisJWT(newClaims.Username)
 				if err != nil {
 					global.EVA_LOG.Error("get redis jwt failed", zap.Error(err))
 				} else { // 当之前的取成功时才进行拉黑操作
-					//_ = jwtService.JsonInBlacklist(system.JwtBlacklist{Jwt: RedisJwtToken})
+					_ = jwtService.JsonInBlacklist(system.JwtBlacklist{Jwt: RedisJwtToken})
 				}
 				// 无论如何都要记录当前的活跃状态
-				//_ = jwtService.SetRedisJWT(newToken, newClaims.Username)
+				_ = jwtService.SetRedisJWT(newToken, newClaims.Username)
 			}
 		}
 		c.Set("claims", claims)

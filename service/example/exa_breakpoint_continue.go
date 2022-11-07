@@ -4,7 +4,7 @@ import (
 	"errors"
 
 	"eva/global"
-	"eva/model/example"
+	"eva/model/file_upload"
 	"gorm.io/gorm"
 )
 
@@ -16,8 +16,8 @@ type FileUploadAndDownloadService struct{}
 //@param: fileMd5 string, fileName string, chunkTotal int
 //@return: file model.ExaFile, err error
 
-func (e *FileUploadAndDownloadService) FindOrCreateFile(fileMd5 string, fileName string, chunkTotal int) (file example.ExaFile, err error) {
-	var cfile example.ExaFile
+func (e *FileUploadAndDownloadService) FindOrCreateFile(fileMd5 string, fileName string, chunkTotal int) (file file_upload.ExaFile, err error) {
+	var cfile file_upload.ExaFile
 	cfile.FileMd5 = fileMd5
 	cfile.FileName = fileName
 	cfile.ChunkTotal = chunkTotal
@@ -39,7 +39,7 @@ func (e *FileUploadAndDownloadService) FindOrCreateFile(fileMd5 string, fileName
 //@return: error
 
 func (e *FileUploadAndDownloadService) CreateFileChunk(id uint, fileChunkPath string, fileChunkNumber int) error {
-	var chunk example.ExaFileChunk
+	var chunk file_upload.ExaFileChunk
 	chunk.FileChunkPath = fileChunkPath
 	chunk.ExaFileID = id
 	chunk.FileChunkNumber = fileChunkNumber
@@ -54,8 +54,8 @@ func (e *FileUploadAndDownloadService) CreateFileChunk(id uint, fileChunkPath st
 //@return: error
 
 func (e *FileUploadAndDownloadService) DeleteFileChunk(fileMd5 string, filePath string) error {
-	var chunks []example.ExaFileChunk
-	var file example.ExaFile
+	var chunks []file_upload.ExaFileChunk
+	var file file_upload.ExaFile
 	err := global.EVA_DB.Where("file_md5 = ? ", fileMd5).First(&file).
 		Updates(map[string]interface{}{
 			"IsFinish":  true,

@@ -7,14 +7,12 @@ import (
 	"github.com/gin-gonic/gin"
 	"os"
 	"path/filepath"
-	"time"
 
-	"github.com/songzhibin97/gkit/cache/local_cache"
+	"github.com/fsnotify/fsnotify"
+	"github.com/spf13/viper"
 
 	"eva/global"
 	_ "eva/packfile"
-	"github.com/fsnotify/fsnotify"
-	"github.com/spf13/viper"
 )
 
 // Viper //
@@ -24,7 +22,7 @@ func Viper(path ...string) *viper.Viper {
 	var config string
 
 	if len(path) == 0 {
-		flag.StringVar(&config, "c", "", "choose config file.")
+		flag.StringVar(&config, "conf-dir", "", "choose config file.")
 		flag.Parse()
 		if config == "" { // 判断命令行参数是否为空
 			if configEnv := os.Getenv(internal.ConfigEnv); configEnv == "" { // 判断 internal.ConfigEnv 常量存储的环境变量是否为空
@@ -52,7 +50,7 @@ func Viper(path ...string) *viper.Viper {
 	}
 
 	v := viper.New()
-	v.SetConfigFile(config)
+	v.SetConfigFile("conf/" + config)
 	v.SetConfigType("yaml")
 	err := v.ReadInConfig()
 	if err != nil {
@@ -72,8 +70,5 @@ func Viper(path ...string) *viper.Viper {
 
 	// root 适配性 根据root位置去找到对应迁移位置,保证root路径有效
 	global.EVA_CONFIG.AutoCode.Root, _ = filepath.Abs("..")
-	global.BlackCache = local_cache.NewCache(
-		local_cache.SetDefaultExpire(time.Second * time.Duration(global.EVA_CONFIG.JWT.ExpiresTime)),
-	)
 	return v
 }

@@ -6,6 +6,8 @@ import (
 	"eva/middleware"
 	"eva/router"
 	"github.com/gin-gonic/gin"
+	"github.com/swaggo/gin-swagger"
+	"github.com/swaggo/gin-swagger/swaggerFiles"
 	"net/http"
 )
 
@@ -13,7 +15,7 @@ import (
 
 func Routers() *gin.Engine {
 	Router := gin.Default()
-	//systemRouter := router.RouterGroupApp.System
+	systemRouter := router.RouterGroupApp.System
 	exampleRouter := router.RouterGroupApp.Example
 	// 如果想要不使用nginx代理前端网页，可以修改 web/.env.production 下的
 	// VUE_APP_BASE_API = /
@@ -30,11 +32,11 @@ func Routers() *gin.Engine {
 	Router.Use(middleware.Cors()) // 直接放行全部跨域请求
 	//Router.Use(middleware.CorsByRules()) // 按照配置的规则放行跨域请求
 	global.EVA_LOG.Info("use middleware cors")
-	//Router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
+	Router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 	//global.EVA_LOG.Info("register swagger handler")
 	// 方便统一添加路由组前缀 多服务器上线使用
 
-	//PublicGroup := Router.Group("")
+	PublicGroup := Router.Group("")
 	{
 		// 健康监测
 		Router.GET("/ping", func(c *gin.Context) {
@@ -42,15 +44,15 @@ func Routers() *gin.Engine {
 		})
 	}
 	{
-		//systemRouter.InitBaseRouter(PublicGroup) // 注册基础功能路由 不做鉴权
+		systemRouter.InitBaseRouter(PublicGroup) // 注册基础功能路由 不做鉴权/ login/ 验证码
 		//systemRouter.InitInitRouter(PublicGroup) // 自动初始化相关
 	}
-	PrivateGroup := Router.Group("")
+	PrivateGroup := Router.Group("api/v1")
 	//PrivateGroup.Use(middleware.JWTAuth()).Use(middleware.CasbinHandler())
 	{
 		//systemRouter.InitApiRouter(PrivateGroup)                 // 注册功能api路由
 		//systemRouter.InitJwtRouter(PrivateGroup)                 // jwt相关路由
-		//systemRouter.InitUserRouter(PrivateGroup)                // 注册用户路由
+		systemRouter.InitUserRouter(PrivateGroup) // 注册用户路由
 		//systemRouter.InitMenuRouter(PrivateGroup)                // 注册menu路由
 		//systemRouter.InitSystemRouter(PrivateGroup)              // system相关路由
 		//systemRouter.InitCasbinRouter(PrivateGroup)              // 权限相关路由
