@@ -2,10 +2,10 @@
 
 # jwt configuration
 jwt:
-  signing-key: 'lujiashuai'
-  expires-time: 604800
-  buffer-time: 86400
-  issuer: 'lujiashuai'
+  signing-key: 9d6a04e6-186b-4cd6-8b63-f0d0910d5d46
+  expires-time: 7d
+  buffer-time: 1d
+  issuer: lujiashuai
 
 # zap logger configuration
 zap:
@@ -23,7 +23,7 @@ zap:
 redis:
   db: 0
   addr: '127.0.0.1:6379'
-  password: ''
+  password: 'xianjian1998'
 
 # email configuration
 email:
@@ -152,6 +152,16 @@ tencent-cos:
   secret-key: 'xxxxxxxx'
   base-url: 'https://gin.vue.admin'
   path-prefix: 'eva'
+
+# tencent sms configuration
+tencent-sms:
+  secret-id: '1400632003'
+  secret-key: '178c45c93e06ca4ce2bbf70b7b617a8e'
+  sign: '林音三弦个人公众号'
+  template:
+    -login: 1300422,
+    register: 1300423,
+    re_pwd: 1300420
 
 # aws s3 configuration (minio compatible)
 aws-s3:

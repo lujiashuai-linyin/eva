@@ -1,7 +1,7 @@
 package system
 
 import (
-	"eva/config"
+	"eva/biz/config"
 )
 
 // 配置文件结构体

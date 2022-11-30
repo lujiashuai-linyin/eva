@@ -1,0 +1,85 @@
+[eva日记]2022/11/19 - 13:33:59.062	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/19 - 13:33:59.075	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/redis.go:22	redis connect ping response:	{"pong": "PONG"}
+[eva日记]2022/11/19 - 13:33:59.075	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/19 - 13:33:59.076	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/19 - 13:33:59.076	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/19 - 15:11:04.381	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:55	register table success
+[eva日记]2022/11/19 - 15:11:04.385	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/redis.go:22	redis connect ping response:	{"pong": "PONG"}
+[eva日记]2022/11/19 - 15:11:04.385	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/19 - 15:11:04.386	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/19 - 15:11:04.386	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/19 - 15:20:49.417	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:55	register table success
+[eva日记]2022/11/19 - 15:20:49.419	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/redis.go:22	redis connect ping response:	{"pong": "PONG"}
+[eva日记]2022/11/19 - 15:20:49.419	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/19 - 15:20:49.420	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/19 - 15:20:49.420	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/19 - 15:34:17.369	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:55	register table success
+[eva日记]2022/11/19 - 15:34:17.372	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/redis.go:22	redis connect ping response:	{"pong": "PONG"}
+[eva日记]2022/11/19 - 15:34:17.372	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/19 - 15:34:17.373	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/19 - 15:34:17.374	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/19 - 15:35:00.934	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:55	register table success
+[eva日记]2022/11/19 - 15:35:00.936	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/redis.go:22	redis connect ping response:	{"pong": "PONG"}
+[eva日记]2022/11/19 - 15:35:00.936	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/19 - 15:35:00.937	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/19 - 15:35:00.937	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/19 - 15:44:41.946	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:55	register table success
+[eva日记]2022/11/19 - 15:44:41.949	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/redis.go:22	redis connect ping response:	{"pong": "PONG"}
+[eva日记]2022/11/19 - 15:44:41.950	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/19 - 15:44:41.951	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/19 - 15:44:41.951	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/19 - 16:45:22.482	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:55	register table success
+[eva日记]2022/11/19 - 16:45:22.484	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/redis.go:22	redis connect ping response:	{"pong": "PONG"}
+[eva日记]2022/11/19 - 16:45:22.484	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/19 - 16:45:22.485	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/19 - 16:45:22.485	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/19 - 17:34:51.059	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:55	register table success
+[eva日记]2022/11/19 - 17:34:51.060	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/redis.go:22	redis connect ping response:	{"pong": "PONG"}
+[eva日记]2022/11/19 - 17:34:51.061	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/19 - 17:34:51.061	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/19 - 17:34:51.061	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/19 - 17:39:50.741	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:55	register table success
+[eva日记]2022/11/19 - 17:39:50.743	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/redis.go:22	redis connect ping response:	{"pong": "PONG"}
+[eva日记]2022/11/19 - 17:39:50.743	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/19 - 17:39:50.743	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/19 - 17:39:50.744	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/19 - 17:45:16.532	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:55	register table success
+[eva日记]2022/11/19 - 17:45:16.533	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/redis.go:22	redis connect ping response:	{"pong": "PONG"}
+[eva日记]2022/11/19 - 17:45:16.533	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/19 - 17:45:16.534	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/19 - 17:45:16.534	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/19 - 17:48:57.561	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:55	register table success
+[eva日记]2022/11/19 - 17:48:57.563	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/redis.go:22	redis connect ping response:	{"pong": "PONG"}
+[eva日记]2022/11/19 - 17:48:57.563	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/19 - 17:48:57.564	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/19 - 17:48:57.564	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/19 - 17:58:24.219	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:55	register table success
+[eva日记]2022/11/19 - 17:58:24.220	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/redis.go:22	redis connect ping response:	{"pong": "PONG"}
+[eva日记]2022/11/19 - 17:58:24.220	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/19 - 17:58:24.221	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/19 - 17:58:24.221	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/19 - 18:08:11.510	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:55	register table success
+[eva日记]2022/11/19 - 18:08:11.512	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/redis.go:22	redis connect ping response:	{"pong": "PONG"}
+[eva日记]2022/11/19 - 18:08:11.512	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/19 - 18:08:11.513	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/19 - 18:08:11.513	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/19 - 18:15:13.899	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:55	register table success
+[eva日记]2022/11/19 - 18:15:13.902	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/redis.go:22	redis connect ping response:	{"pong": "PONG"}
+[eva日记]2022/11/19 - 18:15:13.903	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/19 - 18:15:13.904	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/19 - 18:15:13.904	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/19 - 18:29:07.823	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:55	register table success
+[eva日记]2022/11/19 - 18:29:07.829	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/redis.go:22	redis connect ping response:	{"pong": "PONG"}
+[eva日记]2022/11/19 - 18:29:07.829	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/19 - 18:29:07.830	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/19 - 18:29:07.830	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/19 - 18:36:10.922	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:55	register table success
+[eva日记]2022/11/19 - 18:36:10.924	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/redis.go:22	redis connect ping response:	{"pong": "PONG"}
+[eva日记]2022/11/19 - 18:36:10.924	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/19 - 18:36:10.925	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/19 - 18:36:10.925	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}
+[eva日记]2022/11/19 - 18:40:25.662	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:55	register table success
+[eva日记]2022/11/19 - 18:40:25.664	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/redis.go:22	redis connect ping response:	{"pong": "PONG"}
+[eva日记]2022/11/19 - 18:40:25.664	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/19 - 18:40:25.665	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/19 - 18:40:25.665	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}

@@ -1,0 +1,9 @@
+[eva日记]2022/11/12 - 15:09:32.693	[31merror[0m	/Users/bytedance/go/src/eva/api/v1/system/sys_captcha.go:57	请求参数错误!
+[eva日记]2022/11/12 - 15:42:32.602	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/12 - 15:42:32.606	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	net.Listen error: listen tcp :9999: bind: address already in use
+[eva日记]2022/11/12 - 15:43:01.895	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/12 - 22:02:48.495	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/12 - 22:02:48.498	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	net.Listen error: listen tcp :9999: bind: address already in use
+[eva日记]2022/11/12 - 22:04:07.516	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/12 - 22:10:15.803	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}
+[eva日记]2022/11/12 - 22:23:19.978	[31merror[0m	/Users/bytedance/go/src/eva/initialize/redis.go:20	redis connect ping failed, err:	{"error": "NOAUTH Authentication required."}

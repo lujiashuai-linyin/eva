@@ -3,7 +3,7 @@ package request
 import (
 	"fmt"
 
-	"eva/config"
+	"eva/biz/config"
 )
 
 type InitDB struct {

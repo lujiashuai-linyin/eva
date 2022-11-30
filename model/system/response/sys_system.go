@@ -1,6 +1,6 @@
 package response
 
-import "eva/config"
+import "eva/biz/config"
 
 type SysConfigResponse struct {
 	Config config.Server `json:"config"`

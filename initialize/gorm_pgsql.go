@@ -1,7 +1,7 @@
 package initialize
 
 import (
-	"eva/config"
+	"eva/biz/config"
 	"eva/global"
 	"eva/initialize/internal"
 	"gorm.io/driver/postgres"

@@ -8,4 +8,9 @@ type BookChapter struct {
 	ChapterName  string `json:"chapter_name" form:"chapter_name" gorm:"column:chapter_name;comment:chapter_name"`
 	ChapterOrder int    `json:"chapter_order" form:"chapter_order" gorm:"column:chapter_order;comment:chapter_order"`
 	Content      string `json:"content" form:"content" gorm:"column:content;type:text;comment:content"`
+	Extra        string `json:"extra" form:"extra" gorm:"column:extra;comment:extra"`
+}
+
+func (BookChapter) TableName() string {
+	return "book_chapters"
 }

@@ -3,6 +3,8 @@ package middleware
 import (
 	"bytes"
 	"encoding/json"
+	"eva/biz/service"
+	"eva/biz/utils"
 	"io"
 	"net/http"
 	"net/url"
@@ -11,11 +13,8 @@ import (
 	"sync"
 	"time"
 
-	"eva/utils"
-
 	"eva/global"
 	"eva/model/system"
-	"eva/service"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 )

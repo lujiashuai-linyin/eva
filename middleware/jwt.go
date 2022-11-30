@@ -1,16 +1,14 @@
 package middleware
 
 import (
+	"eva/biz/service"
+	utils2 "eva/biz/utils"
 	"strconv"
 	"time"
-
-	"eva/utils"
 
 	"eva/global"
 	"eva/model/common/response"
 	"eva/model/system"
-	"eva/service"
-
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 )
@@ -26,16 +24,16 @@ func JWTAuth() gin.HandlerFunc {
 			c.Abort()
 			return
 		}
-		if jwtService.IsBlacklist(token) {
-			response.FailWithDetailed(gin.H{"reload": true}, "您的帐户异地登陆或令牌失效", c)
-			c.Abort()
-			return
-		}
-		j := utils.NewJWT()
+		//if jwtService.IsBlacklist(token) {
+		//	response.FailWithDetailed(gin.H{"reload": true}, "您的帐户异地登陆或令牌失效", c)
+		//	c.Abort()
+		//	return
+		//}
+		j := utils2.NewJWT()
 		// parseToken 解析token包含的信息
 		claims, err := j.ParseToken(token)
 		if err != nil {
-			if err == utils.TokenExpired {
+			if err == utils2.TokenExpired {
 				response.FailWithDetailed(gin.H{"reload": true}, "授权已过期", c)
 				c.Abort()
 				return
@@ -54,7 +52,7 @@ func JWTAuth() gin.HandlerFunc {
 		//	c.Abort()
 		//}
 		if claims.ExpiresAt-time.Now().Unix() < claims.BufferTime {
-			dr, _ := utils.ParseDuration(global.EVA_CONFIG.JWT.ExpiresTime)
+			dr, _ := utils2.ParseDuration(global.EVA_CONFIG.JWT.ExpiresTime)
 			claims.ExpiresAt = time.Now().Add(dr).Unix()
 			newToken, _ := j.CreateTokenByOldToken(token, *claims)
 			newClaims, _ := j.ParseToken(newToken)

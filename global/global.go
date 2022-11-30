@@ -1,7 +1,7 @@
 package global
 
 import (
-	"eva/utils/timer"
+	"eva/biz/utils/timer"
 	"github.com/songzhibin97/gkit/cache/local_cache"
 	"sync"
 
@@ -11,7 +11,7 @@ import (
 
 	"github.com/go-redis/redis/v8"
 
-	"eva/config"
+	"eva/biz/config"
 	"github.com/spf13/viper"
 	"gorm.io/gorm"
 )

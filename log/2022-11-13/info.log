@@ -1,0 +1,5 @@
+[eva日记]2022/11/13 - 00:01:18.703	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/gorm.go:56	register table success
+[eva日记]2022/11/13 - 00:01:18.705	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/redis.go:22	redis connect ping response:	{"pong": "PONG"}
+[eva日记]2022/11/13 - 00:01:18.705	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:34	use middleware cors
+[eva日记]2022/11/13 - 00:01:18.706	[34minfo[0m	/Users/bytedance/go/src/eva/initialize/router.go:78	router register success
+[eva日记]2022/11/13 - 00:01:18.707	[34minfo[0m	/Users/bytedance/go/src/eva/core/server.go:35	server run success on 	{"address": ":9999"}

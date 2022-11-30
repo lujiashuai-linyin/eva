@@ -1,10 +1,10 @@
 package initialize
 
 import (
+	"eva/biz/utils/plugin"
 	"eva/global"
 	"eva/middleware"
 	"eva/plugin/email"
-	"eva/utils/plugin"
 	"fmt"
 	"github.com/gin-gonic/gin"
 )

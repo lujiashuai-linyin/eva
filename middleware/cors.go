@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"eva/config"
+	"eva/biz/config"
 	"eva/global"
 	"github.com/gin-gonic/gin"
 	"net/http"

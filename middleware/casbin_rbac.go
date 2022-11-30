@@ -1,10 +1,10 @@
 package middleware
 
 import (
+	"eva/biz/service"
+	"eva/biz/utils"
 	"eva/global"
 	"eva/model/common/response"
-	"eva/service"
-	"eva/utils"
 	"github.com/gin-gonic/gin"
 	"strconv"
 )

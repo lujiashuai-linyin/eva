@@ -6,12 +6,14 @@ import model "eva/model/system"
 type Register struct {
 	Username     string `json:"userName"`
 	Password     string `json:"passWord"`
-	NickName     string `json:"nickName" gorm:"default:'QMPlusUser'"`
+	RePassword   string `json:"rePassWord"`
+	NickName     string `json:"nickName" gorm:"default:Eav—client"`
 	HeaderImg    string `json:"headerImg" gorm:"default:'http://localhost:9999/uploads/file/img.png'"`
 	AuthorityId  uint   `json:"authorityId" gorm:"default:888"`
 	Enable       int    `json:"enable"`
 	AuthorityIds []uint `json:"authorityIds" swaggertype:"string" example:"[]uint 角色id"`
 	Phone        string `json:"phone" example:"电话号码"`
+	Captcha      string `json:"captcha" example:"验证码"`
 	Email        string `json:"email" example:"电子邮箱"`
 }
 

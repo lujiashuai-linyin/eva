@@ -1,0 +1,35 @@
+syntax="proto3";
+option go_package="./bytest;proto";
+package proto;
+
+import "google/protobuf/annotations.proto";// 此处在本地编译时请自己把下载的proto文件放到/usr/local/include目录下
+
+message AutoLabelReq {
+  int64 project_id = 1;
+  int64 dir_id = 2;
+  repeated string filter_label = 3;
+  repeated string filter_priority = 4;
+  repeated string add_label = 5;
+  optional string add_priority = 6;
+  repeated string remove_label = 7;
+}
+
+message AutoLabelResp {
+  string task_id = 1;
+  int32 percent = 2;
+  BaseResp base_resp = 3;
+}
+
+message BaseResp {
+  int32 code = 1;
+  string msg = 2;
+}
+
+service AutoLabel {
+  rpc AutoLabelAddTask(AutoLabelReq)returns(AutoLabelResp){
+    option (google.api.http) = {
+      post: "/api/v2/auto_label"
+      body: "*"
+    };
+  };
+}
