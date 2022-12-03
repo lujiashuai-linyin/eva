@@ -1,7 +1,6 @@
 package private
 
 import (
-	"eva/biz/handler"
 	"eva/biz/service"
 )
 
@@ -10,8 +9,9 @@ type ApiGroup struct {
 }
 
 var (
-	CalendarService = service.ServiceGroupApp.CalendarServiceGroup.CalendarService
+	CalendarService = service.ServiceGroupApp.PrivateServiceGroup.CalendarService
 )
 var (
-	CalendarRpcService = handler.RpcGroupApp.BytestRpcGroup.PrivateRpc
+	CalendarRpcService = service.ServiceGroupApp.PrivateServiceGroup.CalendarJobService
+	jobService         = service.ServiceGroupApp.PrivateServiceGroup.JobService
 )

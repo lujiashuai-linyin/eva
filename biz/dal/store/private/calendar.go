@@ -9,7 +9,7 @@ import (
 type CalendarStoreIf interface {
 	FindRecordList(ctx context.Context, UserID int) ([]*private.Calendar, error)
 	DeleteRecord(ctx context.Context, RecordID int) error
-	Create(ctx context.Context, Record private.Calendar) error
+	Create(ctx context.Context, Record private.Calendar) (uint, error)
 	Update(ctx context.Context, Record private.Calendar) error
 }
 
@@ -17,7 +17,7 @@ type CalendarStore struct{}
 
 // 创建一条事件
 
-func (store *CalendarStore) Create(ctx context.Context, Record private.Calendar) error {
+func (store *CalendarStore) Create(ctx context.Context, Record private.Calendar) (uint, error) {
 	//err := global.EVA_DB.Transaction(func(tx *gorm.DB) error {
 	//	for _, record := range Record {
 	//		// 在事务中执行一些 db 操作（从这里开始，您应该使用 'tx' 而不是 'db'）
@@ -29,9 +29,9 @@ func (store *CalendarStore) Create(ctx context.Context, Record private.Calendar)
 	//	return nil
 	//})
 	if err := global.EVA_DB.Create(&Record).Error; err != nil {
-		return err
+		return 0, err
 	}
-	return nil
+	return Record.ID, nil
 }
 
 // 获取事件列表

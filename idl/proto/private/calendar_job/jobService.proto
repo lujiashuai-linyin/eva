@@ -1,0 +1,74 @@
+syntax="proto3";
+option go_package="./private/calendar_job;private_pd";
+package proto;
+import "idl/proto/private/calendar_job/jobModels.proto";
+
+// 创建一个job
+message CreateJobRequest{
+  uint64 UserID=1;
+  uint64 RecordID=2;
+  string Title=3;
+  string Content=4;
+  string  NoticeTime=5;
+  optional string  Phone=6;
+  string  Email=7;
+  optional string  WeChat=8;
+}
+
+message Message {
+  uint64 JobID=1;
+  uint32 Status=3;
+}
+
+message CreateJobResponse{
+  uint32 Code=1;
+  string Msg=2;
+  Message Data=3;
+}
+
+// 按照状态查询某一个用户的job
+
+message GetJobListRequest{
+  uint64 UserID=1;
+  uint32 Status=2;
+  uint64 RecordID=3;
+}
+
+message GetJobListResponse{
+  uint32 Code=1;
+  string Msg=2;
+  repeated JobModel Data=3;
+}
+
+// 按照job_id 查找job详情
+
+message GetJobDetailRequest{
+  uint64 JobID=1;
+}
+
+message GetJobDetailResponse{
+  uint32 Code=1;
+  string Msg=2;
+  JobModel Data=3;
+}
+
+// 删除一个job
+
+message DeleteJobRequest{
+  uint64 RecordID=1;
+  optional string  NoticeTime=5;
+  optional uint64 UserID=2;
+}
+
+message CommonResponse{
+  uint32 Code=1;
+  string Msg=2;
+  string Data=3;
+}
+
+service JobService{
+  rpc JobCreate(CreateJobRequest) returns(CreateJobResponse);
+  rpc GetJobList(GetJobListRequest) returns(GetJobListResponse);
+  rpc GetJobDetail(GetJobDetailRequest) returns(GetJobDetailResponse);
+  rpc DeleteJob(DeleteJobRequest) returns(CommonResponse);
+}

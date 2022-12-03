@@ -1,13 +1,11 @@
 package initialize
 
 import (
-	"eva/biz/utils"
-	"fmt"
-
-	"github.com/robfig/cron/v3"
-
 	"eva/biz/config"
+	"eva/biz/utils"
 	"eva/global"
+	"fmt"
+	"github.com/robfig/cron/v3"
 )
 
 func Timer() {

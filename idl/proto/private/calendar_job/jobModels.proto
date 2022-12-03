@@ -1,0 +1,25 @@
+syntax="proto3";
+option go_package="./private/calendar_job;private_pd";
+package proto;
+
+message JobModel {
+  // @inject_tag: json:"job_id"
+  uint64 JobID=1;
+  // @inject_tag: json:"user_id"
+  uint64 UserID=2;
+  // @inject_tag: json:"status"
+  uint32 Status=3;
+  // @inject_tag: json:"title"
+  string Title=4;
+  // @inject_tag: json:"content"
+  string  Content=5;
+  // @inject_tag: json:"notice_time"
+  string NoticeTime=6;
+  // @inject_tag: json:"phone"
+  optional string  Phone=7;
+  // @inject_tag: json:"email"
+  string  Email=8;
+  // @inject_tag: json:"wechat"
+  optional string  WeChat=9;
+  uint64  RecordID=10;
+}

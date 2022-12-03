@@ -15,5 +15,6 @@ func (s *CalendarRouter) InitCalendarRouter(Router *gin.RouterGroup) {
 		calendarRouterWithJWT.POST("/add_record", calendarApi.AddCalendarRecord)
 		calendarRouterWithJWT.GET("/get_record_list", calendarApi.GetCalendarRecord)
 		calendarRouterWithJWT.POST("/delete_record", calendarApi.DeleteCalendarRecord)
+		calendarRouterWithJWT.GET("/start_job_server", calendarApi.JobServerStart)
 	}
 }

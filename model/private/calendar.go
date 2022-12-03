@@ -13,8 +13,9 @@ type Calendar struct {
 	EndTime      time.Time `json:"end_time" form:"end_time" gorm:"column:end_time;comment:结束时间"`
 	Title        string    `json:"title"  form:"title" gorm:"column:title;type:varchar(200);comment:title"`
 	Content      string    `json:"content" form:"content" gorm:"column:content;type:text;comment:content"`
-	Alert        bool      `json:"alert" form:"alert" gorm:"column:alert;comment:是否提醒"`
-	PreAlertTime string    `json:"pre_alert_time" form:"pre_alert_time" gorm:"column:pre_alert_time;type:varchar(18);comment:提前多久提醒,为列表"`
+	Alert        bool      `json:"alert" form:"alert" gorm:"column:alert;default:0;comment:是否提醒"`
+	PreAlertTime string    `json:"pre_alert_time" form:"pre_alert_time" gorm:"column:pre_alert_time;default:5;type:varchar(18);comment:提前多久提醒,为列表min"`
+	AlertMethod  string    `json:"alert_method"  form:"alert_method" gorm:"column:alert_method;type:varchar(8);default:email;comment:提醒方法：phone/email/wechat"`
 	Address      string    `json:"address" form:"address" gorm:"column:address;type:varchar(500);comment:文件地址"`
 	UserStatus   string    `json:"user_status" form:"user_status" gorm:"column:user_status;type:varchar(5);comment:设置用户状态"`
 	Repeat       string    `json:"repeat" form:"repeat" gorm:"column:repeat;type:varchar(10);comment:重复策略/每天/每周/每月/每年"`

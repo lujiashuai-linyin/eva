@@ -4,21 +4,30 @@ import (
 	"context"
 	"eva/biz/dal/store"
 	"eva/model/private"
+	"fmt"
 	"time"
 )
 
 type CalendarService struct{}
 
+var calendarJobService = CalendarJobService{}
+var jobService = JobService{}
+
 // 创建日历事件
 
-func (c *CalendarService) CreateCalendarRecord(record private.Calendar) error {
+func (c *CalendarService) CreateCalendarRecord(record private.Calendar) (uint, error) {
 	ctx := context.Background()
+	var realID, id uint
 	oneDay, err := time.ParseDuration("24h")
 	switch record.Repeat {
 	case "每天":
 		i := 0
 		for ; i < 7; i++ {
-			err = store.CalendarStore.Create(ctx, record)
+			id, err = store.CalendarStore.Create(ctx, record)
+			if i == 0 {
+				fmt.Println("realID:", id)
+				realID = id
+			}
 			if err != nil {
 				break
 			}
@@ -27,12 +36,16 @@ func (c *CalendarService) CreateCalendarRecord(record private.Calendar) error {
 		}
 
 		if err != nil {
-			return err
+			return 0, err
 		}
 	case "每周":
 		i := 0
 		for ; i < 7; i++ {
-			err = store.CalendarStore.Create(ctx, record)
+			id, err = store.CalendarStore.Create(ctx, record)
+			if i == 0 {
+				fmt.Println("realID:", id)
+				realID = id
+			}
 			if err != nil {
 				break
 			}
@@ -40,12 +53,13 @@ func (c *CalendarService) CreateCalendarRecord(record private.Calendar) error {
 			record.EndTime = record.EndTime.AddDate(0, 0, 7)
 		}
 		if err != nil {
-			return err
+			return 0, err
 		}
 	case "每月":
 		i := 0
 		year, month, day := record.StartTime.Date()
-		err = store.CalendarStore.Create(ctx, record)
+		id, err = store.CalendarStore.Create(ctx, record)
+		realID = id
 		if err != nil {
 			break
 		}
@@ -54,38 +68,38 @@ func (c *CalendarService) CreateCalendarRecord(record private.Calendar) error {
 			if yearGo == year && monthGo == month+1 && dayGo == day {
 				record.StartTime = record.StartTime.AddDate(0, 1, 0)
 				record.EndTime = record.EndTime.AddDate(0, 1, 0)
-				err = store.CalendarStore.Create(ctx, record)
+				id, err = store.CalendarStore.Create(ctx, record)
 			} else if yearGo == year+1 && month == 12 && dayGo == day {
 				record.StartTime = record.StartTime.AddDate(0, 1, 0)
 				record.EndTime = record.EndTime.AddDate(0, 1, 0)
-				err = store.CalendarStore.Create(ctx, record)
+				id, err = store.CalendarStore.Create(ctx, record)
 			}
 		}
 		if err != nil {
-			return err
+			return 0, err
 		}
 	case "每年":
 		i := 0
 		for ; i < 7; i++ {
-			err = store.CalendarStore.Create(ctx, record)
+			id, err = store.CalendarStore.Create(ctx, record)
+			if i == 0 {
+				fmt.Println("realID:", id)
+				realID = id
+			}
 			record.StartTime = record.StartTime.AddDate(0, 0, 1)
 			record.EndTime = record.EndTime.AddDate(0, 0, 1)
 		}
 		if err != nil {
-			return err
+			return 0, err
 		}
 	default:
-		err = store.CalendarStore.Create(ctx, record)
+		id, err = store.CalendarStore.Create(ctx, record)
+		realID = id
 		if err != nil {
-			return err
+			return 0, err
 		}
 	}
-	return nil
-}
-
-// 创建日历事件定时调度
-func (c *CalendarService) CreateCalendarRecordScheduler(record private.Calendar) error {
-	return nil
+	return realID, nil
 }
 
 // 获取日历事件
