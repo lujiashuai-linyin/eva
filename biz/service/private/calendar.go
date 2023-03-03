@@ -113,11 +113,38 @@ func (c *CalendarService) GetCalendarRecord(id uint) ([]*private.Calendar, error
 	return result, nil
 }
 
-func (c *CalendarService) DeleteCalendarRecord(id int) error {
+func (c *CalendarService) DeleteCalendarRecord(uid uint, id int) error {
 	ctx := context.Background()
-	err := store.CalendarStore.DeleteRecord(ctx, id)
+	err := store.CalendarStore.DeleteRecord(ctx, uid, id)
 	if err != nil {
 		return err
 	}
 	return nil
+}
+
+func (c *CalendarService) UpdateCalendarRecord(uid uint, record private.Calendar) error {
+	ctx := context.Background()
+	err := store.CalendarStore.Update(ctx, uid, record)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+func (c *CalendarService) UpdateEndTime(uid uint, record private.Calendar) error {
+	ctx := context.Background()
+	err := store.CalendarStore.UpdateEndTime(ctx, uid, record)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+func (c *CalendarService) GetCalendarRecordDetail(userID uint, RecordID int) (private.Calendar, error) {
+	ctx := context.Background()
+	result, err := store.CalendarStore.Detail(ctx, userID, RecordID)
+	if err != nil {
+		return result, err
+	}
+	return result, err
 }

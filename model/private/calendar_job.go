@@ -20,6 +20,7 @@ type CalendarJob struct {
 	global.EVA_MODEL
 	UserID     uint64    `json:"user_id" form:"user_id" gorm:"column:user_id;"`
 	RecordID   uint64    `json:"record_id" form:"record_id" gorm:"column:record_id;"`
+	CronID     uint64    `json:"cron_id" form:"cron_id" gorm:"column:cron_id;"`
 	Status     uint32    `json:"status" form:"status" gorm:"column:status;type:tinyint;default:2"`
 	Title      string    `json:"title"  form:"title" gorm:"column:title;type:varchar(200);comment:title"`
 	Content    string    `json:"content" form:"content" gorm:"column:content;type:text;comment:content"`

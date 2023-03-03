@@ -87,6 +87,7 @@ func (b *BaseApi) TokenNext(c *gin.Context, user system.SysUser) {
 		response.OkWithDetailed(systemRes.LoginResponse{
 			Token:     token,
 			Username:  user.Username,
+			Avatar:    user.HeaderImg,
 			ExpiresAt: claims.StandardClaims.ExpiresAt * 1000,
 		}, "多点登录成功", c)
 		return
@@ -101,6 +102,7 @@ func (b *BaseApi) TokenNext(c *gin.Context, user system.SysUser) {
 		response.OkWithDetailed(systemRes.LoginResponse{
 			Token:     token,
 			Username:  user.Username,
+			Avatar:    user.HeaderImg,
 			ExpiresAt: claims.StandardClaims.ExpiresAt * 1000,
 		}, "登录成功", c)
 	} else if err != nil {
@@ -120,6 +122,7 @@ func (b *BaseApi) TokenNext(c *gin.Context, user system.SysUser) {
 		response.OkWithDetailed(systemRes.LoginResponse{
 			Token:     token,
 			Username:  user.Username,
+			Avatar:    user.HeaderImg,
 			ExpiresAt: claims.StandardClaims.ExpiresAt * 1000,
 		}, "登录成功", c)
 	}

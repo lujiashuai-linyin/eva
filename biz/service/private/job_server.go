@@ -3,8 +3,11 @@ package private
 import (
 	"eva/biz/service/send_message"
 	"eva/biz/utils/timer"
+	"eva/global"
 	"eva/model/private"
 	"fmt"
+	"github.com/robfig/cron/v3"
+	"strings"
 	"time"
 )
 
@@ -14,7 +17,7 @@ var isFirst bool = true
 var sendMessageService = send_message.SendMessageService{}
 
 // 还需考虑，一个小时中如果有新增任务，该如何加入队列，可以nsq或kafka来做
-// 也可以这个新增任务的时间属于当前小时内的，那么我们在入库的同时丢给刚才的 HandleJob 。
+// 也可以判断这个新增任务的时间是否属于当前小时内的，那么我们在入库的同时丢给刚才的 HandleJob 。
 type JobService struct{}
 
 func (j *JobService) SchedulerCalendarInit() {
@@ -40,9 +43,8 @@ func (j *JobService) SchedulerCalendarInit() {
 		jobFunc := func(ch <-chan private.CalendarJob) {
 			//wg.Add(100)
 			for item := range ch {
-				// 发送通知, 切片处理100，前提是任务列表要按照时间顺序排列
-				//go HandleJob(item, &wg)
-				// 量级不大，就简单点
+				// 使用麻省理工的cron依赖
+				// 也可以用带有延时队列功能的队列或数据库
 				go j.HandleJob(item)
 				//wg.Wait()
 			}
@@ -57,25 +59,28 @@ func (j *JobService) SchedulerCalendarInit() {
 }
 
 func (j *JobService) HandleJob(job private.CalendarJob) {
-	now := timer.GetCurrTime()
-	diff := job.NoticeTime.Sub(now)
-	//fmt.Println("diff:", diff)
-	timerJob := time.NewTimer(diff)
-	_ = calendarJobService.UpdateStatusById(int(job.ID), private.JobDoing)
-	<-timerJob.C
+	currentTime := job.NoticeTime.Format("05 04 15 2 1 2006")
+	noticeTime := strings.Replace(currentTime, currentTime[len(currentTime)-4:len(currentTime)], "*", 1)
+	fmt.Println("noticeTime:", noticeTime)
+	cronID, _ := global.EVA_Timer.AddTaskByFunc("calendarSendAlert", noticeTime, func() {
+		j.SendMessage(job)
+	}, cron.WithSeconds())
+	fmt.Println("cronID:", cronID)
+	_ = calendarJobService.UpdateCronIDAndStatusById(int(job.ID), cronID, private.JobDoing)
+}
 
+func (j *JobService) SendMessage(job private.CalendarJob) {
 	err := sendMessageService.SendDemo(job)
-	//sendTool = &sendMessageService.SmsMsg{Job: job}
-	//if job.Phone == "" {
-	//	sendTool = &sendMessageService.EmailMsg{Job: job}
-	//}
-	//err := sendMessageService.Notice(sendTool)
-	//成功与否
+	// 是否成功
 	isOk := private.JobSuccess
 	if err != nil {
 		isOk = private.JobFail
 		fmt.Printf("通知失败:%v", err)
 	}
+	// 更新状态
 	_ = calendarJobService.UpdateStatusById(int(job.ID), isOk)
+	// 移除定时任务
+	cronID, _ := calendarJobService.GetCronID(int(job.ID))
+	global.EVA_Timer.Remove("CalendarSendAlert", int(cronID))
 	//wg.Done()
 }

@@ -1,0 +1,11 @@
+[eva日记]2022/12/18 - 13:16:35.394	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	net.Listen error: listen tcp :9999: bind: address already in use
+[eva日记]2022/12/18 - 13:18:00.532	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/private/calendar.go:156	请求参数错误!	{"error": "json: cannot unmarshal string into Go struct field Calendar.ID of type uint"}
+[eva日记]2022/12/18 - 13:18:56.178	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/private/calendar.go:164	内部错误!	{"error": "Error 1292: Incorrect datetime value: '0000-00-00' for column 'end_time' at row 1"}
+[eva日记]2022/12/18 - 13:20:57.224	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/private/calendar.go:164	内部错误!	{"error": "Error 1292: Incorrect datetime value: '0000-00-00' for column 'end_time' at row 1"}
+[eva日记]2022/12/18 - 13:22:13.467	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/private/calendar.go:164	内部错误!	{"error": "Error 1292: Incorrect datetime value: '0000-00-00' for column 'end_time' at row 1"}
+[eva日记]2022/12/18 - 13:23:44.428	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/private/calendar.go:164	内部错误!	{"error": "Error 1292: Incorrect datetime value: '0000-00-00' for column 'end_time' at row 1"}
+[eva日记]2022/12/18 - 13:25:17.851	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/private/calendar.go:164	内部错误!	{"error": "Error 1292: Incorrect datetime value: '0000-00-00' for column 'end_time' at row 1"}
+[eva日记]2022/12/18 - 13:26:12.258	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/private/calendar.go:164	内部错误!	{"error": "Error 1292: Incorrect datetime value: '0000-00-00' for column 'end_time' at row 1"}
+[eva日记]2022/12/18 - 13:28:01.974	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:43	accept tcp [::]:9999: use of closed network connection
+[eva日记]2022/12/18 - 13:28:39.390	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/private/calendar.go:165	内部错误!	{"error": "Error 1292: Incorrect datetime value: '0000-00-00' for column 'end_time' at row 1"}
+[eva日记]2022/12/18 - 13:29:18.790	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/private/calendar.go:165	内部错误!	{"error": "Error 1292: Incorrect datetime value: '0000-00-00' for column 'end_time' at row 1"}

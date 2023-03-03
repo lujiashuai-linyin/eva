@@ -17,6 +17,7 @@ func main() {
 	global.EVA_LOG = core.Zap()  // 初始化zap日志库
 	zap.ReplaceGlobals(global.EVA_LOG)
 	global.EVA_DB = initialize.Gorm() // gorm连接数据库
+	// 初始化数据表接口
 	initialize.InitStore()
 	//initialize.Timer()
 	//initialize.DBList()
