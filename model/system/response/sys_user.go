@@ -11,6 +11,7 @@ type SysUserResponse struct {
 type LoginResponse struct {
 	Token     string `json:"token"`
 	Username  string `json:"username"`
+	NickName  string `json:"nickname"`
 	Avatar    string `json:"avatar"`
 	ExpiresAt int64  `json:"expiresAt"`
 }

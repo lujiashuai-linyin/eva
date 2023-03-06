@@ -1,0 +1,17 @@
+[eva日记]2023/03/04 - 17:34:37.646	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/03/04 - 17:38:55.733	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/03/04 - 18:13:26.523	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/03/04 - 18:17:46.764	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/03/04 - 19:57:32.936	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/system/sys_captcha.go:92	验证超时！	{"error": "redis: nil"}
+[eva日记]2023/03/04 - 20:26:45.411	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/03/04 - 20:35:43.696	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/03/04 - 20:49:56.122	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/03/04 - 21:45:08.400	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/03/04 - 21:55:18.542	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/03/04 - 21:56:29.801	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/03/04 - 21:59:43.866	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/03/04 - 22:00:45.882	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/03/04 - 22:05:32.747	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/03/04 - 22:08:56.131	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/03/04 - 22:36:17.949	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/03/04 - 22:44:40.157	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection

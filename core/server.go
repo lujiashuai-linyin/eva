@@ -18,6 +18,7 @@ func RunWindowsServer() {
 		// 初始化redis服务
 		initialize.Redis()
 	}
+	initialize.Mongodb()
 
 	// 从db加载jwt数据
 	//if global.EVA_DB != nil {

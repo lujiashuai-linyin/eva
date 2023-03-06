@@ -22,7 +22,7 @@ func main() {
 	//initialize.Timer()
 	//initialize.DBList()
 	if global.EVA_DB != nil {
-		initialize.RegisterTables(global.EVA_DB) // 初始化表
+		//initialize.RegisterTables(global.EVA_DB) // 初始化表
 		// 程序结束前关闭数据库链接
 		db, _ := global.EVA_DB.DB()
 		defer db.Close()

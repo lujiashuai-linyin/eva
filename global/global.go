@@ -3,6 +3,7 @@ package global
 import (
 	"eva/biz/utils/timer"
 	"github.com/songzhibin97/gkit/cache/local_cache"
+	"go.mongodb.org/mongo-driver/mongo"
 	"sync"
 
 	"golang.org/x/sync/singleflight"
@@ -17,11 +18,12 @@ import (
 )
 
 var (
-	EVA_DB     *gorm.DB
-	EVA_DBList map[string]*gorm.DB
-	EVA_REDIS  *redis.Client
-	EVA_CONFIG config.Server
-	EVA_VP     *viper.Viper
+	EVA_DB      *gorm.DB
+	EVA_DBList  map[string]*gorm.DB
+	EVA_REDIS   *redis.Client
+	EVA_MongoDB *mongo.Client
+	EVA_CONFIG  config.Server
+	EVA_VP      *viper.Viper
 	// EVA_LOG    *oplogging.Logger
 	EVA_LOG                 *zap.Logger
 	EVA_Timer               timer.Timer = timer.NewTimerTask()

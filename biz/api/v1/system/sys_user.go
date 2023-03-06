@@ -86,6 +86,7 @@ func (b *BaseApi) TokenNext(c *gin.Context, user system.SysUser) {
 	if !global.EVA_CONFIG.System.UseMultipoint {
 		response.OkWithDetailed(systemRes.LoginResponse{
 			Token:     token,
+			NickName:  user.NickName,
 			Username:  user.Username,
 			Avatar:    user.HeaderImg,
 			ExpiresAt: claims.StandardClaims.ExpiresAt * 1000,
@@ -101,6 +102,7 @@ func (b *BaseApi) TokenNext(c *gin.Context, user system.SysUser) {
 		}
 		response.OkWithDetailed(systemRes.LoginResponse{
 			Token:     token,
+			NickName:  user.NickName,
 			Username:  user.Username,
 			Avatar:    user.HeaderImg,
 			ExpiresAt: claims.StandardClaims.ExpiresAt * 1000,
@@ -121,6 +123,7 @@ func (b *BaseApi) TokenNext(c *gin.Context, user system.SysUser) {
 		}
 		response.OkWithDetailed(systemRes.LoginResponse{
 			Token:     token,
+			NickName:  user.NickName,
 			Username:  user.Username,
 			Avatar:    user.HeaderImg,
 			ExpiresAt: claims.StandardClaims.ExpiresAt * 1000,

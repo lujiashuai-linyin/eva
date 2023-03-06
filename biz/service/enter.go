@@ -1,6 +1,7 @@
 package service
 
 import (
+	"eva/biz/service/ai"
 	"eva/biz/service/example"
 	"eva/biz/service/private"
 	"eva/biz/service/send_message"
@@ -12,6 +13,7 @@ type ServiceGroup struct {
 	ExampleServiceGroup example.ServiceGroup
 	PrivateServiceGroup private.ServiceGroup
 	SendMessageService  send_message.ServiceGroup
+	AIServiceGroup      ai.ServiceGroup
 }
 
 var ServiceGroupApp = new(ServiceGroup)
