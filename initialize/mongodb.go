@@ -12,7 +12,7 @@ import (
 func Mongodb() {
 	// 设置连接选项
 	//global.EVA_CONFIG.Mongodb
-	clientOptions := options.Client().ApplyURI("mongodb://10.248.153.74:27017")
+	clientOptions := options.Client().ApplyURI("mongodb://localhost:27017")
 
 	// 连接到MongoDB
 	client, err := mongo.Connect(context.Background(), clientOptions)
