@@ -2,6 +2,8 @@ package ai
 
 import "time"
 
+// mongo
+
 type ChatCustom struct {
 	User       string    `bson:"user" json:"user"`
 	UserID     int64     `bson:"user_id" json:"user_id"`

@@ -44,6 +44,7 @@ func (b *ChatApi) Question(c *gin.Context) {
 	go func(total_tokens int) {
 		err = chatService.AddToken(user, int64(userID), total_tokens)
 	}(int(total_tokens))
+	fmt.Printf("topic_id:%d", req.TopicID)
 	err = chatService.AddMessage(req.Topic, int64(req.TopicID), user, int64(userID), message)
 	if err != nil {
 		fmt.Println(err)

@@ -1,0 +1,34 @@
+[eva日记]2023/04/22 - 19:57:10.949	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	net.Listen error: listen tcp :9999: bind: address already in use
+[eva日记]2023/04/22 - 20:06:44.095	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:17	请求参数错误!	{"error": "invalid character 'i' in literal true (expecting 'r')"}
+[eva日记]2023/04/22 - 20:06:44.510	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:17	请求参数错误!	{"error": "invalid character 'i' in literal true (expecting 'r')"}
+[eva日记]2023/04/22 - 20:06:45.025	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:17	请求参数错误!	{"error": "invalid character 'i' in literal true (expecting 'r')"}
+[eva日记]2023/04/22 - 20:06:45.506	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:17	请求参数错误!	{"error": "invalid character 'i' in literal true (expecting 'r')"}
+[eva日记]2023/04/22 - 20:06:46.034	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:17	请求参数错误!	{"error": "invalid character 'i' in literal true (expecting 'r')"}
+[eva日记]2023/04/22 - 20:06:46.561	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:17	请求参数错误!	{"error": "invalid character 'i' in literal true (expecting 'r')"}
+[eva日记]2023/04/22 - 20:06:47.068	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:17	请求参数错误!	{"error": "invalid character 'i' in literal true (expecting 'r')"}
+[eva日记]2023/04/22 - 20:06:47.791	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:17	请求参数错误!	{"error": "invalid character 'i' in literal true (expecting 'r')"}
+[eva日记]2023/04/22 - 20:06:48.241	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:17	请求参数错误!	{"error": "invalid character 'i' in literal true (expecting 'r')"}
+[eva日记]2023/04/22 - 20:11:29.798	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:17	请求参数错误!	{"error": "invalid character 'i' in literal true (expecting 'r')"}
+[eva日记]2023/04/22 - 20:11:30.223	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:17	请求参数错误!	{"error": "invalid character 'i' in literal true (expecting 'r')"}
+[eva日记]2023/04/22 - 20:11:30.729	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:17	请求参数错误!	{"error": "invalid character 'i' in literal true (expecting 'r')"}
+[eva日记]2023/04/22 - 20:11:31.225	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:17	请求参数错误!	{"error": "invalid character 'i' in literal true (expecting 'r')"}
+[eva日记]2023/04/22 - 20:18:36.378	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	net.Listen error: listen tcp :9999: bind: address already in use
+[eva日记]2023/04/22 - 20:24:09.858	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/04/22 - 20:36:08.280	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/04/22 - 20:36:29.093	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/04/22 - 20:40:26.326	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/04/22 - 20:40:51.459	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/04/22 - 20:44:38.215	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/04/22 - 20:48:35.038	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/04/22 - 20:51:45.881	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/04/22 - 20:51:59.084	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:24	内部错误!	{"error": "Error 1406 (22001): Data too long for column 'author_related' at row 1"}
+[eva日记]2023/04/22 - 20:51:59.748	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:24	内部错误!	{"error": "Error 1406 (22001): Data too long for column 'author_related' at row 1"}
+[eva日记]2023/04/22 - 20:52:00.391	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:24	内部错误!	{"error": "Error 1406 (22001): Data too long for column 'author_related' at row 1"}
+[eva日记]2023/04/22 - 20:52:00.908	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:24	内部错误!	{"error": "Error 1406 (22001): Data too long for column 'author_related' at row 1"}
+[eva日记]2023/04/22 - 20:52:01.556	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:24	内部错误!	{"error": "Error 1406 (22001): Data too long for column 'author_related' at row 1"}
+[eva日记]2023/04/22 - 20:52:02.001	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:24	内部错误!	{"error": "Error 1406 (22001): Data too long for column 'author_related' at row 1"}
+[eva日记]2023/04/22 - 20:52:02.469	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:24	内部错误!	{"error": "Error 1406 (22001): Data too long for column 'author_related' at row 1"}
+[eva日记]2023/04/22 - 20:53:03.803	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection
+[eva日记]2023/04/22 - 21:15:55.242	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:24	内部错误!	{"error": "Error 1406 (22001): Data too long for column 'chapter_list' at row 1"}
+[eva日记]2023/04/22 - 21:15:56.294	[31merror[0m	/Users/bytedance/go/src/eva/biz/api/v1/anime_video/anime_video.go:24	内部错误!	{"error": "Error 1406 (22001): Data too long for column 'introduction' at row 1"}
+[eva日记]2023/04/22 - 21:18:17.775	[31merror[0m	/Users/bytedance/go/src/eva/core/server.go:44	accept tcp [::]:9999: use of closed network connection

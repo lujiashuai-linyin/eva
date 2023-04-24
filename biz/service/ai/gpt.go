@@ -37,7 +37,7 @@ func (c *ChatService) Question(model string, content []ai.Message) (map[string]i
 
 	// 设置请求头
 	req.Header.Set("Content-Type", "application/json")
-	req.Header.Set("Authorization", "Bearer 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")
+	req.Header.Set("Authorization", "Bearer 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")
 
 	// 发送请求并获取响应
 	client := &http.Client{}
@@ -56,7 +56,7 @@ func (c *ChatService) Question(model string, content []ai.Message) (map[string]i
 	if err != nil {
 		return body, err
 	}
-	fmt.Printf("body=%+v", body)
+	//fmt.Printf("body=%+v", body)
 	return body, nil
 }
 
@@ -79,6 +79,7 @@ func (c *ChatService) AddMessage(topic string, topicID int64, user string, user_
 
 	// 如果查询到了记录，则更新 Message 字段
 	if result.Err() == nil {
+		fmt.Println("查到了")
 		update := bson.M{"$set": chat}
 		_, err := chat_table.UpdateOne(context.Background(), filter, update)
 		return err
