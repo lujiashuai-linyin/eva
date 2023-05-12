@@ -48,7 +48,7 @@ func (c *ChatService) Question(model string, content []ai.Message) (map[string]i
 
 	// 设置请求头
 	req.Header.Set("Content-Type", "application/json")
-	req.Header.Set("Authorization", "Bearer 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")
+	req.Header.Set("Authorization", "")
 
 	// 发送请求并获取响应
 	client := &http.Client{}
