@@ -12,6 +12,25 @@ import (
 
 type ChatApi struct{}
 
+func (b *ChatApi) DeleteTopic(c *gin.Context) {
+	claims, _ := c.Get("claims")
+	userID := claims.(*request.CustomClaims).ID
+	res := map[string]interface{}{}
+	err := c.ShouldBindJSON(&res)
+	if err != nil {
+		response.FailWithMessage("参数错误！", c)
+		return
+	}
+	id := res["id"].(float64)
+	err = chatService.Delete(int(id), int(userID))
+	if err != nil {
+		fmt.Println(err)
+		response.SFailWithMessage("fail！", c)
+		return
+	}
+	response.OkWithMessage("success", c)
+}
+
 func (b *ChatApi) Question(c *gin.Context) {
 	// 获取用户信息
 	var req AIReq.QuestionReq

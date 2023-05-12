@@ -15,6 +15,17 @@ import (
 
 type ChatService struct{}
 
+func (c *ChatService) Delete(id, user_id int) error {
+	filter := bson.M{"topic_id": id, "user_id": user_id}
+	chat_table := global.EVA_MongoDB.Database("chat_app").Collection("chat_history")
+	_, err := chat_table.DeleteOne(context.Background(), filter)
+	if err != nil {
+		// 处理错误
+		return err
+	}
+	return nil
+}
+
 func (c *ChatService) Question(model string, content []ai.Message) (map[string]interface{}, error) {
 	body := map[string]interface{}{}
 	// 设置 OpenAI API 请求的参数
@@ -56,7 +67,7 @@ func (c *ChatService) Question(model string, content []ai.Message) (map[string]i
 	if err != nil {
 		return body, err
 	}
-	//fmt.Printf("body=%+v", body)
+	fmt.Printf("body=%+v", body)
 	return body, nil
 }
 
@@ -64,7 +75,7 @@ func (c *ChatService) Question(model string, content []ai.Message) (map[string]i
 
 func (c *ChatService) AddMessage(topic string, topicID int64, user string, user_id int64, message []ai.Message) error {
 	// 先查询是否已有该条记录
-	filter := bson.M{"topic": topic, "topic_id": topicID, "user_id": user_id}
+	filter := bson.M{"topic_id": topicID, "user_id": user_id}
 	chat_table := global.EVA_MongoDB.Database("chat_app").Collection("chat_history")
 	result := chat_table.FindOne(context.Background(), filter)
 

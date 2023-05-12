@@ -13,6 +13,7 @@ func (s *ChatRouter) InitGptRouter(Router *gin.RouterGroup) {
 	chatApi := v1.ApiGroupApp.ChatApiGroup.ChatApi
 	{
 		gptRouterWithJWT.POST("question", chatApi.Question)
+		gptRouterWithJWT.POST("topic_delete", chatApi.DeleteTopic)
 		gptRouterWithJWT.GET("topic_chat", chatApi.GetTopicMessage)
 		gptRouterWithJWT.GET("topic_list", chatApi.GetTopicList)
 	}
